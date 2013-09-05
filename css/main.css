@@ -1,0 +1,282 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/** Start page **/
+
+body {
+	font: 28px 'Fjalla One', sans-serif;
+	text-align: center;
+	color: #333;
+}
+
+
+section {
+	padding: 30px;
+}
+
+h1 {
+	font-size: 125px;
+	font-family: 'Fjalla One', sans-serif;
+	text-shadow:2px 2px #000;
+}
+
+
+.detail {
+	font-size: 25px;
+	display: block;
+	font: 18px 'Fjalla One', sans-serif;
+	margin: -30px;
+	background-color: rgb(19, 167, 199);
+	width: 300px;
+	margin: -10px auto;
+	color: #FFF;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	text-shadow: none;
+}
+
+
+/** MAIN MENU **/
+nav {
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	font-size: 18px;
+	z-index: 10000;
+	background: #FFF;
+}
+
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	padding: 4px 12px;
+	color: #13A7C7;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+.show-fixed {
+	background: #13A7C7;	
+}
+
+.show-fixed a {
+	color: #FFF !important;
+}
+
+
+/** COMMON SECTION **/
+section h2 {
+	font: 86px 'Nunito', sans-serif;
+}
+
+section h3 {
+	font-size: 35px;
+	text-align: center;
+	color: #FFF;
+font: 25px 'Nunito', sans-serif;
+
+	padding: 0px 15px;
+	background: rgba(26, 27, 33, 0.6);
+	text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.8);
+}
+section .content-main {
+	width: 80%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+#start {
+	height: 240px;
+	padding: 150px 0;
+	background: url("../img/main5.jpg");
+	background-size: 100% 100%;
+	overflow: hidden;
+	color: #FFF;
+}
+
+
+#about {
+	background-color: rgb(19, 167, 199);
+	border-top: 5px solid #333;
+}
+
+#curriculo {
+	background: #333;
+	color: #DDD;
+	border-top: 5px solid #DDD;
+
+}
+
+#curriculo h2 {
+	color: #DDD;
+}
+#timeline {
+	background: #FFF;
+	color: #2ba6cb;
+	border-top: 5px solid #2ba6cb;
+	min-height: 600px;
+}
+
+#timeline h3 {
+	font: 30px/30px 'Fjalla One', sans-serif;
+
+}
+
+#ecommerce {
+	background: #99cc00;
+	color: #FFF;
+	border-top: 5px solid #FFF;
+}
+
+#contact {
+	background: #333;
+	color: #DDD;
+	border-top: 5px solid #DDD;
+}
+
+#contact strong {
+	color: #99cc00;
+}
+
+
+p.more-links {
+	text-align: center; 
+	margin: 20px 0;
+}
+p.more-links a{
+	color: #FFF !important;	
+	text-decoration: none;	
+}
+
+p.more-links .item {
+	margin: 0 20px;
+}
+
+p {
+	margin: 1.1em 0;
+}
+/** icons **/
+.master-ico {
+	color: #FFF;
+	font-size: 30px;
+}
+
+#about a {
+	color: rgb(6, 93, 112);
+}
+
+
+#curriculo a {
+	color: #FFF;
+}
+
+
+/* forms */
+
+.data-input {
+	width: 500px;
+ 	padding: 10px;
+	font: 28px 'Nunito', sans-serif;	
+	background: #DDD;
+	border: 5px solid #333;
+}
+
+.data-submit {
+	background: #99cc00;
+	color: #FFF;
+	border: 5px solid #99cc00;
+	cursor: pointer;
+	width: 520px;
+}
+
+
+/* box numbers */
+.box-number {
+	background: #FFF; 
+	padding: 15px; 
+	border-radius: 18px; 
+	width: 170px; 
+	float: left; 
+	text-align: center; 
+	min-height: 170px;
+	margin: 0 20px;
+}
+
+.box-number-selected {
+	background: rgba(26, 27, 33, 0.6) !important;
+	color: #FFF !important;
+}
+
+.box-number-selected h5{ 
+	font-size: 22px !important;
+	display: inline;
+}
+
+.box-number-selected .detail-cv {
+	font-size: 22px !important;
+}
+
+.box-number h5 {
+	 font-family: 'Fjalla One', cursive; font-size: 95px; 
+}
+
+.box-number .detail-cv {
+	 font-family: 'Fjalla One', cursive; font-size: 15px; 
+}
