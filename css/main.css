@@ -123,23 +123,29 @@ nav ul li a:hover {
 
 /** COMMON SECTION **/
 section h2 {
-	font: 86px 'Nunito', sans-serif;
+	font: 86px 'Fjalla One',sans-serif;
 }
 
 section h3 {
 	font-size: 35px;
 	text-align: center;
 	color: #FFF;
-font: 25px 'Nunito', sans-serif;
 
-	padding: 0px 15px;
+	padding: 3px 15px;
 	background: rgba(26, 27, 33, 0.6);
 	text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.8);
+	font: 28px 'Fjalla One',sans-serif;
 }
 section .content-main {
 	width: 80%;
 	margin: 0 auto;
 	text-align: justify;
+
+	font-family: 'News Cycle',sans-serif;
+}
+
+.statistic-numbers {
+	clear: both;
 }
 
 #start {
@@ -176,7 +182,7 @@ section .content-main {
 
 #timeline h3 {
 	font: 30px/30px 'Fjalla One', sans-serif;
-
+	margin: 30px 0px;
 }
 
 #ecommerce {
@@ -195,6 +201,10 @@ section .content-main {
 	color: #99cc00;
 }
 
+#contact form {
+	width: 600px;
+	margin: 0 auto;
+}
 
 p.more-links {
 	text-align: center; 
@@ -220,11 +230,18 @@ p {
 
 #about a {
 	color: rgb(6, 93, 112);
+	font-weight: bold;
 }
 
 
 #curriculo a {
 	color: #FFF;
+	font-weight: bold;
+}
+
+#ecommerce a {
+	color: #FFF;
+	font-weight: bold;
 }
 
 
@@ -257,26 +274,29 @@ p {
 	text-align: center; 
 	min-height: 170px;
 	margin: 0 20px;
+	color: #000;
 }
 
 .box-number-selected {
 	background: rgba(26, 27, 33, 0.6) !important;
+	color: #FFF;
+}
+
+.box-number-selected .detail-cv a {
 	color: #FFF !important;
 }
 
-.box-number-selected h5{ 
-	font-size: 22px !important;
-	display: inline;
-}
-
-.box-number-selected .detail-cv {
-	font-size: 22px !important;
-}
 
 .box-number h5 {
 	 font-family: 'Fjalla One', cursive; font-size: 95px; 
 }
 
 .box-number .detail-cv {
-	 font-family: 'Fjalla One', cursive; font-size: 15px; 
+	 font-family: 'Fjalla One', cursive; font-size: 18px; 
+	 color: #000;
 }
+
+.box-number .detail-cv a {
+	color: #000;
+}
+
