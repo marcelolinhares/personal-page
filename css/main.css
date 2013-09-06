@@ -282,6 +282,10 @@ p {
 	color: #FFF;
 }
 
+
+.box-number-selected .detail-cv {
+	color: #FFF !important;
+}
 .box-number-selected .detail-cv a {
 	color: #FFF !important;
 }
