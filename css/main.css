@@ -161,6 +161,7 @@ section .content-main {
 #about {
 	background-color: rgb(19, 167, 199);
 	border-top: 5px solid #333;
+	color: #FFF;
 }
 
 #curriculo {
@@ -229,7 +230,7 @@ p {
 }
 
 #about a {
-	color: rgb(6, 93, 112);
+	color: #FFF;
 	font-weight: bold;
 }
 
