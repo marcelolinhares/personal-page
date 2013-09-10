@@ -108,6 +108,10 @@ nav ul li a {
 	text-decoration: none;
 }
 
+nav ul li a.current {
+	border: 1px solid #FFF;
+}
+
 nav ul li a:hover {
 	text-decoration: underline;
 }
@@ -278,6 +282,21 @@ p {
 	color: #000;
 }
 
+.box-number-projects {
+	background: #FFF; 
+	padding: 15px; 
+	border-radius: 18px; 
+}
+
+.box-number-projects a {
+	display: inline-block;
+	margin: 10px;
+	vertical-align: middle;
+
+}
+#ecommerce .box-number a {
+	color: #000;
+}
 .box-number-selected {
 	background: rgba(26, 27, 33, 0.6) !important;
 	color: #FFF;
@@ -288,7 +307,7 @@ p {
 	color: #FFF !important;
 }
 .box-number-selected .detail-cv a {
-	color: #FFF !important;
+	color: #FFF !important ;
 }
 
 
