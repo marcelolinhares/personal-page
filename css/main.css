@@ -89,7 +89,7 @@ h1 {
 
 /** MAIN MENU **/
 nav {
-	padding: 10px 0;
+	padding: 8px 0;
 	position: fixed;
 	width: 100%;
 	font-size: 18px;
@@ -249,6 +249,10 @@ p {
 	font-weight: bold;
 }
 
+#jobs a {
+	color: #000;
+	font-weight: bold;
+}
 
 /* forms */
 

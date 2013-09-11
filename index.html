@@ -69,10 +69,10 @@
         Como instrutor, já dei mais de 100 horas de treinamentos de webdevelopment (PHP, HTML5, AJAX e JavaScript) e palestras em faculdades como PUC Minas e Unatech, cursos in company para Secretaria de Governo de Minas Gerais e World Tennis, e turmas abertas pela PHPrime, PUC Minas e Pró informática.
     </p>
 
-    <p>Gosto de estudar assuntos relacionados a tecnologia e negócios, temas como empreendedorismo digital, lean startup, <a href="#link-ecommerce">comércio eletrônico</a>, finanças corporativas, web analytics, padrões web, usabilidade, acessibilidade, EcmaScript/Ajax, metodologia ágeis e (ou) qualquer assunto que esteja diretamente ligada a engenharia de software, experiência do usuário e a boa gestão de um negócio digital. 
+    <p>Gosto de estudar assuntos relacionados a tecnologia e negócios, temas como empreendedorismo digital, lean startup, <a href="#link-ecommerce">comércio eletrônico</a>, finanças corporativas, web analytics, padrões web, usabilidade, acessibilidade, EcmaScript/Ajax, metodologia ágeis, gestão e liderança e (ou) qualquer assunto que esteja diretamente ligada a engenharia de software, experiência do usuário e a boa gestão de um negócio digital. 
     </p>
     <p>
-     Sou entusiasta de e-commerce, negócios digitais, software livre, lean startup e metodologias ágeis, graduado em Sistemas de Informação na <a href="http://www.pucminas.br" title="PUC Minas">PUC Minas</a> e atualmente sou mestrando em Administração e Finanças pela <a href="http://www.fecap.br" title="FECAP">FECAP</a>.
+     Sou entusiasta de negócios digitais, software livre, lean startup e metodologias ágeis, graduado em Sistemas de Informação na <a href="http://www.pucminas.br" title="PUC Minas">PUC Minas</a> e atualmente sou mestrando em Administração e Finanças pela <a href="http://www.fecap.br" title="FECAP">FECAP</a>.
  </p>
 
  <h3>Alguns números</h3>
@@ -193,14 +193,18 @@
         </div>
     </section>
 
-
-    <a id="link-jobs"></a>
+<a id="link-jobs"></a>
+    
     <section id="jobs">
+
       <h2>Últimos Projetos</h2>
       <div class="content-main">
         <p>Nos últimos meses, além do trabalho full time na <a href="http://www.lema21.com.br">Lema21</a>,  colaborei como freelancer no projeto da loja virtual da 
-            <a href="http://www.odomed.com.br/loja/">Odomed</a> e da <a href="http://www.hificlub.com.br/">Hificlub</a>, ambos em Magento. Também ministrei um <a href="http://www.phprime.com.br/cursos/magento/">treinamento avançado in company de Magento</a> pro time da World Tênnis, com objetivo de melhorar a performance da aplicação e melhorar a aderência do time a codificação dentro dos padrões da plataforma Magento.
+            <a href="http://www.odomed.com.br/loja/">Odomed</a> e da <a href="http://www.hificlub.com.br/">Hificlub</a>, ambos em Magento. Também ministrei um <a href="http://www.phprime.com.br/cursos/magento/">treinamento avançado in company de Magento</a> para o time da World Tênnis, com objetivo de melhorar a performance da aplicação e melhorar a aderência do time a codificação dentro dos padrões da plataforma Magento.
         </p>
+        <p>
+            Tenho disponibilidade aproximada de 12 horas por semana para novos projetos, caso precise de uma ajuda no desenvolvimento do seu projeto em Magento, <a href="#link-contact">entre em contato</a>.
+        </p>          
     </div>
 </section>
 
@@ -213,22 +217,35 @@
         E-mail para <strong>marcelolinhares@gmail.com</strong>, ou se preferir deixe o seu recado abaixo
     </p>
     
-    <form action="">
-        <p>
-            <input type="text" placeholder="Seu Nome" class="data-input" />
-        </p>
-        <p>
-            <input type="email" placeholder="Seu e-mail" class="data-input" />
-        </p>
-        <p>
-            <textarea class="data-input">Mensagem</textarea>
-        </p>
-        <input type="submit" class="data-input data-submit" />
+    <form action="mail.php" id="send-contact-me" method="post">
+        
+        <div class="middle-main">
+            <p>
+                <input 
+                    name="name" type="text" 
+                    required="required" 
+                    placeholder="Seu Nome" 
+                    class="data-input" />
+            </p>
+            <p>
+                <input name="email" 
+                    type="email" 
+                    placeholder="Seu e-mail" 
+                    class="data-input"
+                    required="required"
+                 />
+            </p>
+            <p>
+                <textarea name="msg" class="data-input" placeholder="Sua mensagem"></textarea>
+            </p>
+        </div>
+        <input type="submit" class="data-input data-submit" value="Enviar contato"/>
     </form>
 </div>
 </section>
 
 <script type="text/javascript">
+
 
 $('a').smoothScroll();
 $("document").ready(function(){
@@ -247,22 +264,28 @@ $("document").ready(function(){
         // show fixed menu
         $(window).scroll(function () {
             if ($(this).scrollTop() > 515) {
-                console.log($(this).scrollTop());
                 $("#main-menu a").removeClass("current");
                 $(".menu-sobre").addClass("current");
             }
-            if ($(this).scrollTop() > 2300) {
-                console.log($(this).scrollTop());
+            if ($(this).scrollTop() > 2300) {               
                 $("#main-menu a ").removeClass("current");
                 $(".menu-cv").addClass("current");
             }
 
             if ($(this).scrollTop() > 2570) {
-                console.log($(this).scrollTop());
                 $("#main-menu a").removeClass("current");
                 $(".menu-b2c").addClass("current");
             }
 
+            if ($(this).scrollTop() > 4980) {
+                $("#main-menu a").removeClass("current");
+                $(".menu-projetos").addClass("current");
+            }
+
+            if ($(this).scrollTop() > 5548) {
+                $("#main-menu a").removeClass("current");
+                $(".menu-contato").addClass("current");
+            }
         });
 
     });
@@ -274,7 +297,33 @@ $(".box-number").hover(
     function(e) { 
         jQuery(this).removeClass("box-number-selected", 200, "linear") 
     }
-    );
+);
+
+$("#send-contact-me").submit(function(event) {
+
+    console.log("enviando contato");
+
+    event.preventDefault();
+ 
+    var name  = $( this ).find( 'input[name="name"]' ).val();
+    var email = $( this ).find( 'input[name="email"]' ).val();
+    var msg   = $( this ).find( 'textarea[name="msg"]' ).val();
+
+    console.log("MSG > " + msg);
+
+    $.post(
+        "mail.php", { name : name, email : email, msg : msg}, function(data) {
+            jQuery(".data-submit").val("Enviando...");
+        }
+    ).done(function(data){
+        jQuery(".middle-main").hide("slow");
+        //console.log("response > " + data.response);
+        jQuery(".data-submit").val("Contato enviado com sucesso");
+    }); 
+
+//    console.log("post 1 feito");
+        
+});
 </script>
 </body>
 </html>
