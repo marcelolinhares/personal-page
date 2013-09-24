@@ -76,7 +76,7 @@ h1 {
 	font: 18px 'Fjalla One', sans-serif;
 	margin: -30px;
 	background-color: rgb(19, 167, 199);
-	width: 300px;
+	width: 500px;
 	margin: -10px auto;
 	color: #FFF;
 	-webkit-border-radius: 20px;
@@ -336,3 +336,6 @@ p {
 	color: #000;
 }
 
+
+/* mask */
+.same { display:  none;}

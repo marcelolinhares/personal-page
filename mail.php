@@ -1,5 +1,8 @@
 <?php
 
+if ($_POST['full_name']!="") {
+    exit("Spam ;-)");
+}
 $name = $_POST['name'];
 
 $email = $_POST['email'];
